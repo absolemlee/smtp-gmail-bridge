@@ -1,0 +1,104 @@
+############################################
+# Node.js
+############################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npmrc
+
+# ignore the content of the secrets directory
+/secrets/*
+
+
+############################################
+# Runtime / Process
+############################################
+.pids
+*.pid
+*.pid.lock
+*.seed
+*.pidfile
+
+############################################
+# Environment & Secrets (CRITICAL)
+############################################
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.csr
+*.pfx
+*.p12
+*.der
+secrets/
+credentials/
+oauth/
+tokens/
+
+############################################
+# SMTP / Mail Server Artifacts
+############################################
+mail/
+mails/
+queue/
+spool/
+tmp/
+outbox/
+inbox/
+*.eml
+*.msg
+
+############################################
+# Haraka / SMTP-specific
+############################################
+config/*.ini.bak
+config/*.json.bak
+plugins/*.local
+haraka.log*
+haraka.pid
+
+############################################
+# Logs
+############################################
+logs/
+*.log
+*.log.*
+
+############################################
+# Docker
+############################################
+.docker/
+docker-data/
+docker-volumes/
+docker-compose.override.yml
+
+############################################
+# OS / Editor
+############################################
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+.vscode/
+.idea/
+
+############################################
+# Build / Cache
+############################################
+dist/
+build/
+.cache/
+coverage/
+.nyc_output/
+
+############################################
+# Testing
+############################################
+test-results/
+playwright-report/
