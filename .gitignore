@@ -10,7 +10,7 @@ pnpm-debug.log*
 
 # ignore the content of the secrets directory
 /secrets/*
-
+!/secrets/.gitkeep
 
 ############################################
 # Runtime / Process
